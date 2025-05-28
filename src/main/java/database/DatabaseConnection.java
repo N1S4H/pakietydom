@@ -1,5 +1,7 @@
 package database;
 
+import auth.Account;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -31,5 +33,9 @@ public class DatabaseConnection {
                 ex.printStackTrace();
             }
         }
+    }
+
+    public void save(Account newAccount) {
+//        connection.prepareStatement("")
     }
 }
